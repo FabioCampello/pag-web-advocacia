@@ -1,0 +1,226 @@
+﻿@charset "UTF-8"; 
+
+/* DECLARAÇÃO DOS ATRIBUTOS DE ESTILO DO CSS */
+
+
+/* ****************************************************************************************************************************** */
+/* ************************************************  CARACTERÍSTICAS DO CORPO *************************************************** */
+/* ****************************************************************************************************************************** */
+body{
+    width: 100%; /* DEFINE A LARGURA DO CORPO DO SITE */ 
+    height: 100%; /* DEFINE A ALTURA DO CORPO DO SITE */
+    background-image:url(_imagens/Top_site.png); /* DEFINE A COR DO BACKGROUND DO TOPO DO SITE */  
+    background-repeat: repeat-x;  /* DEFINE A REPETIÇÃO DA COR DO BACKGROUND DO TOPO DO SITE */
+    background-color: #8C7853; /* DEFINE A COR DE FUNDO DO BACKGROUND */ 
+}
+
+/* ****************************************************************************************************************************** */
+/* ************************************************  CARACTERÍSTICAS DO TÍTULO ************************************************** */
+/* ****************************************************************************************************************************** */
+#titulo{
+    color: white; /* DEFINE A COR DA FONTE DO TÍTULO */
+    text-align: center;
+}
+
+/* ****************************************************************************************************************************** */
+/* *************************************************  CARACTERÍSTICAS DO MENU *************************************************** */
+/* ****************************************************************************************************************************** */
+#menu{
+    width: 100%; /* DEFINE A LARGURA DOS ITENS DOS MENU  */
+    height: 100%; /* DEFINE A ALTURA DOS ITENS DOS MENU */
+    list-style: none; /* DEFINE O ESTILO DO MARCADOR DOS ITENS DA LISTA */
+    text-transform: uppercase; /* TRANSFORMA O TEXTO EM LETRAS MAIÚSCULAS */
+    position: page; /* DA A LIBERDADE DE POSICIONAR O MENU EM QUALQUER LUGAR DO SITE  */
+    text-align: center; /* ALINHA O TEXTO NO CENTRO */
+   
+}
+/* ****************************************************************************************************************************** */
+/* *********************************************  CARACTERÍSTICAS DOS ITENS DO MENU ********************************************* */
+/* ****************************************************************************************************************************** */
+#menu li{
+    display: inline-block; /* DEFINE OS ITENS DA LISTA EM BLOCOS EM UMA SÓ LINHA */
+    background-color: #778899; /* DEFINE A COR DE FUNDO DE CADA ITEM DO MENU */
+    padding: 10px; /* DEFINE O TAMANHO DA ÁREA DE FUNDO DO MENU */
+    margin: 2px; /* DEFINE O ESPAÇAMENTO ENTRE OS INTENS DO MENU */
+    transition: background-color 1s; /* DEFINE O TEMPO DE TRANSIÇÃO DA COR QUANDO O MOUSE ESTIVER ACIONANDO O ITEM DO MENU */
+}
+/* OCULTA O ITEM MENU PRINCIPAL, FICANDO DISPONÍVEL SOMENTE PARA MECANISMOS DE BUSCA DA WEB */
+#menu h1{
+    display: none;
+}
+/* DEFINE A COR DAS LETRAS DO HIPERLINK DO MENU */
+#menu a{
+    color: #000000;
+}
+
+/* ****************************************************************************************************************************** */
+/* ****************************  CARACTERÍSTICAS DOS ITENS DO MENU QUANDO O MOUSE PASSA EM CIMA DO ITEM ************************* */
+/* ****************************************************************************************************************************** */
+#menu li:hover{
+    background-color: #00BFFF; /* MUDA A COR DOS ITENS DO MENU QUANDO O MOUSE PASSA EM CIMA */
+}
+#menu a:hover{
+    color: white; /* MUDA A COR DAS LETRAS DO MENU QUANDO O MOUSE PASSA EM CIMA */
+}
+
+/* ****************************************************************************************************************************** */
+/* **************************************  CARACTERÍSTICAS IMAGEM CENTRAL DO SITE *********************************************** */
+/* ****************************************************************************************************************************** */
+.apresentação{
+    border: 8px solid white; /* DEFINE UMA BORDA PARA A IMAGEM */
+    box-shadow: 2px 2px 4px  2PX black; /* DEFINE UMA SOMBRA PARA BORDA DA IMAGEM */
+    width: auto; /* LARGURA */
+    height: auto; /* ALTURA */
+}
+/* DEFINE CARACTERÍSTICAS PARA A IMAGEM CENTRAL */
+.apresentação img{
+    width: 100%; /* LARGURA */
+    height: 100%; /* ALTURA */
+}
+
+/* ****************************************************************************************************************************** */
+/* *************************************  CARACTERÍSTICAS DAS INFORMAÇÕES LATERAIS ********************************************** */
+/* ****************************************************************************************************************************** */
+#infolateral{
+    text-indent: 5%; /* DEFINE UMA TABULAÇÃO AO TEXTO */
+    float: left;
+    text-align: center; /* ALINHAMENTO DO TEXTO  */
+    border: 10px solid aliceblue; /* CARACTERÍSTICAS DA BORDA */
+    height: 190px; /* ALTURA DA BORDA */
+    width: 90%; /* LARGURA DA BORDA */
+    background-color: #808080; /* DEFINE A COR DO FUNDO */
+    box-shadow: 2px 2px 4px  2px black; /* DEFINE UMA SOMBRA PARA BORDA DA IMAGEM */
+}
+
+/* ****************************************************************************************************************************** */
+/* *********************************  CARACTERÍSTICAS DO PARAGRAFO DE RESUMO DO ESCRITÓRIO ************************************** */
+/* ****************************************************************************************************************************** */
+#paragrafo{
+    position:page; /* DA A LIBERDADE DE POSICIONAR O MENU EM QUALQUER LUGAR DO SITE  */
+    float: right;
+    border: 10px solid grey; /* CARACTERÍSTICAS DA BORDA */
+    padding: 10px;
+    height: 30%; /* ALTURA DA BORDA */
+    width: 60%; /* LARGURA DA BORDA */
+    text-align: justify; /* ALINHAMENTO DO TEXTO  */
+    background-color: aliceblue; /* DEFINE A COR DO FUNDO */
+    box-shadow: 2px 2px 4px  2px black; /* DEFINE UMA SOMBRA PARA BORDA DA IMAGEM */   
+}
+
+/* ****************************************************************************************************************************** */
+/* ***********************************************  CARACTERÍSTICAS DAS IMAGENS ************************************************* */
+/* ****************************************************************************************************************************** */
+.imgMenu{
+    background-color: #C0C0C0; /* DEFINE A COR DE FUNDO */
+    text-align: center; /* ALINHAMENTO DO TEXTO  */
+    border: 8px solid white; /* CARACTERÍSTICAS DA BORDA */
+    box-shadow: 1px 1px 4px black; /* DEFINE UMA SOMBRA PARA BORDA DA IMAGEM */   
+    position: relative; /* POSIÇÃO RELATIVA AO LOCAL QUE O CÓDIGO ESTÁ ESCRITO */
+    width: 280px; /* LARGURA */
+    height: 400px; /* ALTURA */
+}
+/* DEFINE FORMATAÇÃO DA IMAGEM CONHEÇA */
+#conheca{
+    width: 100%; /* LARGURA */
+    height: 182px; /* ALTURA */
+}
+
+/* DEFINE CARACTERÍSTICAS PARA O TEXTO DA IMAGEM */
+#centralizar{
+    font-family: Arial; 
+    text-align: justify; /* ALINHAMENTO DO TEXTO */
+}
+
+/* ****************************************************************************************************************************** */
+/* *******************************************  CARACTERÍSTICAS DO BLOCO DE IMAGENS ********************************************* */
+/* ****************************************************************************************************************************** */
+#IMG{
+    margin: 95px;
+}
+#imgs{
+   margin: 0 auto; 
+}
+
+/* ****************************************************************************************************************************** */
+/* *******************************************  CARACTERÍSTICAS DO RODAPÉ DE INFORMAÇÕES ******************************************/
+/* ****************************************************************************************************************************** */
+#rodape{
+    border: 2px solid aliceblue; /* CARACTERÍSTICAS DA BORDA */
+    box-shadow: 1px 1px 4px black; /* DEFINE UMA SOMBRA PARA BORDA DA IMAGEM */
+    color: white; /* DEFINE A COR DO TEXTO */
+    background-color: black; /* DEFINE A COR DE FUNDO */
+    text-align: center; /* ALINHAMENTO DO TEXTO */
+    align-self: center; /* ALINHAMENTO DE ITENS */
+    margin: 0 auto;
+}
+
+/* ****************************************************************************************************************************** */
+/* **************************************  CARACTERÍSTICAS DA SESSÃO DO LINK ACOMPANHAMENTO ***************************************/
+/* ****************************************************************************************************************************** */
+#acompanhamento{
+    background-color: #C0C0C0; /* DEFINE A COR DE FUNDO */
+    border: 5px solid azure; /* CARACTERÍSTICAS DA BORDA */
+    box-shadow: 1px 1px 4px black; /* DEFINE UMA SOMBRA PARA BORDA DA IMAGEM */
+    padding: 10px; /* DEFINE O ESPAÇO INTERNO DOS ITENS EM RELAÇÃO À BORDA */
+    margin: auto;
+    width: 30%; /* LARGURA */
+    height: 10%; /* ALTURA */
+    text-align: center; /* ALINHAMENTO DE ITENS */
+    margin: 0 auto;
+}
+
+/* ****************************************************************************************************************************** */
+/* ***********************************************  CARACTERÍSTICAS DA SESSÃO CAMPOS **********************************************/
+/* ****************************************************************************************************************************** */
+.processo{
+    border: 10px solid aliceblue; /* CARACTERÍSTICAS DA BORDA */
+    background-color: #5087c3; /* DEFINE A COR DE FUNDO */
+    text-align-last: center; /* ALINHAMENTO DE ITENS */
+}
+#campos{
+   border: 1px solid; /* CARACTERÍSTICAS DA BORDA */
+   background-color: grey; /* DEFINE A COR DE FUNDO */
+   padding: 2px; /* DEFINE O ESPAÇO INTERNO DOS ITENS EM RELAÇÃO À BORDA */
+   margin: 0 auto; /*  */
+   text-align-last: center; /* ALINHAMENTO DO TEXTO */
+   align-content: center; /* ALINHAMENTO DE ITENS */
+}
+
+/* ****************************************************************************************************************************** */
+/* ***************************************** CARACTERÍSTICAS INFORMAÇÕES DO DESENVOLVEDOR *****************************************/
+/* ****************************************************************************************************************************** */
+#desenv{
+    border: 1px solid aliceblue; /* CARACTERÍSTICAS DA BORDA */
+    width: 80%; /* LARGURA */
+    text-align-last: center; /* ALINHAMENTO DE ITENS */
+    margin: 0 auto;
+    background-color: blue;
+    color: white;
+}
+.form{
+    width: 40%;
+}
+
+ .style1 {
+            color: #FF0000;
+            font-size: x-small;
+        }
+
+        .style3 {
+            color: #0000FF;
+            font-size: x-small;
+        }
+
+#cadastro{
+
+   margin-left: auto;
+   margin-right: auto;
+
+}
+
+#formulario{
+   
+   margin-left: auto;
+   margin-right: auto;
+
+}
